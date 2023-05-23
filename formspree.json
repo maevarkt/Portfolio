@@ -1,0 +1,9 @@
+{
+    "forms": {
+      "contact": {
+        "name": "Contact",
+        "actions": [{ "type": "email", "to": "contact.maelab@gmail.com.com" }],
+        "fields": {"email": {"required": "true", "type": "email"}}
+      }
+    }
+  }

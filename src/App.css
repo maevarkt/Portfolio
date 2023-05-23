@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,17 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+@import 'animate.css';
+
+/* 
+https://www.youtube.com/watch?v=bmpI252DmiI&list=WL&index=102 
+style 03:56
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/font/helvetiva.neu.ttf') format('ttf');
+} 
+
+*/
