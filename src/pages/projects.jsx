@@ -1,7 +1,6 @@
 import React from "react";
 import 'animate.css';
 import Hover from "../components/Hover";
-// import Grid from "../components/Grid";
 import Spirograph from "../components/Spirograph";
 import Particles from "../components/Particle";
 import Galaxy_Particle from "../components/Galaxy_Particle";
@@ -9,15 +8,15 @@ import Galaxy_Particle from "../components/Galaxy_Particle";
 export const Projects = () => {
     
     return (
-        <div className="w-full p-5 bg-[#1D1F20] min-h-screen">
+        <div className="w-full h-full p-5 bg-[#1D1F20] min-h-screen">
             <h2 className="font-italiana my-5 ml-4 text-8xl uppercase font-bold text-[#ff4d6d]">Projets</h2>
                 {/* Accordion */}
                 <div id="accordion-flush" data-accordion="collapse" className="mx-4" data-active-classes="text-gray-200 dark:bg-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
                     {/* Codev22 */}
                     <h3 id="accordion-flush-heading-1">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-100 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                        <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-100 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
                         <span className="font-italiana text-xl font-bold">Codev22</span>
-                        <svg data-accordion-icon className="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <svg data-accordion-icon className="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                         </button>
                     </h3>
                     <div id="accordion-flush-body-1" className="hidden" aria-labelledby="accordion-flush-heading-1">
@@ -41,12 +40,12 @@ export const Projects = () => {
                     </div>
                     {/* Focus extension */}
                     <h3 id="accordion-flush-heading-2">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-100 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                        <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-100 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
                         <span className="font-italiana text-xl font-bold">Focus Extension</span>
-                        <svg data-accordion-icon className="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <svg data-accordion-icon className="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                         </button>
                     </h3>
-                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                    <div id="accordion-flush-body-2" className="hidden" aria-labelledby="accordion-flush-heading-2">
                         <div className="py-5 border-b border-gray-200 dark:border-gray-700 md:grid grid-cols-2 flex flex-wrap">
                             <img src="./img/focus.png" alt="Codev22"/>
                             <div className="mt-4">
@@ -68,7 +67,7 @@ export const Projects = () => {
                     <h3 id="accordion-flush-heading-3">
                         <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-100 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
                         <span className="font-italiana text-xl font-bold">Creative coding</span>
-                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <svg data-accordion-icon className="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                         </button>
                     </h3>
                     <div id="accordion-flush-body-3" className="hidden" aria-labelledby="accordion-flush-heading-3">
@@ -78,13 +77,13 @@ export const Projects = () => {
                         </p>
                         <div className="py-5 border-b border-gray-200 dark:border-gray-700 flex flex-row overflow-x-scroll space-x-5 ">
                             <div>
-                                <Hover/>
-                                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                                    Survolez horizontalement
-                                </p>
+                                <Spirograph/>
                             </div>
                             <div>
-                                <Spirograph/>
+                                <Galaxy_Particle/>
+                                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                                    Particules
+                                </p>
                             </div>
                             <div>
                                 <Particles/>
@@ -93,17 +92,11 @@ export const Projects = () => {
                                 </p>
                             </div>
                             <div>
-                                <Galaxy_Particle/>
+                                <Hover/>
                                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                                    Particules
+                                    Survolez horizontalement
                                 </p>
                             </div>
-                            {/* <div>
-                                <Grid/>
-                                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                                    Survolez le sketch
-                                </p>
-                            </div>                             */}
                         </div>
                     </div>
                 </div>

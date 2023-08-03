@@ -16,7 +16,6 @@ export default function Galaxy_Particle (props) {
             this.y = this.y + this.vy;
             // dans cette fonction, la particule se déplace en fonction de la vitesse 
           if (this.x<0 || this.x>p5.width || this.y<0 || this.y>p5.height){
-            console.log(p5);
             this.x = p5.random(0,p5.width);
             this.x = p5.random(0,p5.height); 
           }
