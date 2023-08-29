@@ -1,7 +1,7 @@
 import React from "react"; 
 import Sketch from "react-p5";
 
-export default function Spirograph (props) {
+export function Spirograph (props) {
     let nb = 30; // indique combien de formes je vais dessiner grâce à une boucle
     let rot = 3; // rotation
     let dim = 350;
@@ -10,11 +10,6 @@ export default function Spirograph (props) {
     let sliderNb, sliderRot, sliderFmin;
 
     const setup = (p5, canvasParentRef) => {
-        p5.createCanvas(500, 500).parent(canvasParentRef);
-        p5.rectMode(p5.CENTER);
-        // l'origine du carré est au centre du canevas
-        p5.angleMode(p5.DEGREES);
-        // permet d'exprimer les angles en degré 
         sliderNb = p5.createSlider(2,50,nb,1).parent(canvasParentRef);
         // cette fonction prend 4 param : valeur min de la variable, valeur max de la variable, valeur par déf, pas du slider
         // slider du nombre de formes à dupliquer 
@@ -23,6 +18,11 @@ export default function Spirograph (props) {
         // slider de rotation 
         sliderFmin = p5.createSlider(0.0,1.0,fmin,0.05).parent(canvasParentRef);
         // slider de taille des carrés 
+        p5.createCanvas(500, 500).parent(canvasParentRef);
+        p5.rectMode(p5.CENTER);
+        // l'origine du carré est au centre du canevas
+        p5.angleMode(p5.DEGREES);
+        // permet d'exprimer les angles en degré 
     }
 
     const draw = (p5) => {
@@ -46,7 +46,12 @@ export default function Spirograph (props) {
     }
 
     return (
-        <Sketch setup={setup} draw={draw} />
+        <div className="w-full h-full p-5 bg-[#1D1F20] min-h-full">
+            <h2 className="text-[#ff4d6d] font-italiana text-8xl uppercase font-bold mb-4">Spirographe</h2>
+            <p className="text-white py-2">Bougez les curseurs</p>
+            <Sketch setup={setup} draw={draw} />
+        </div>
     )
-
 }
+
+export default Spirograph;

@@ -3,7 +3,7 @@ import Sketch from "react-p5";
 
 // let x = 50;
 // let y = 50;
-export default function Particle (props) {
+export function Particle (props) {
     class xParticle {
         // modèle sur lequel on va pouvoir dupliquer des objets qui auront des propriétés x, y, vx et vy particulières
           constructor (x,y,p5){
@@ -68,5 +68,13 @@ export default function Particle (props) {
     }
   };
 
-  return <Sketch setup={setup} draw={draw} />;
-};
+  return (
+    <div className="w-full h-full p-5 bg-[#1D1F20] min-h-full">
+        <h2 className="text-[#ff4d6d] font-italiana text-8xl uppercase font-bold mb-4">Particules</h2>
+        <p className="text-white py-2">Les particules font un mouvement aléatoire qui ne rend jamais le même dessin</p>
+        <Sketch setup={setup} draw={draw} />
+    </div>
+)
+}
+
+export default Particle;

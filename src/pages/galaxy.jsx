@@ -1,7 +1,7 @@
 import React from "react";
 import Sketch from "react-p5";
 
-export default function Galaxy_Particle (props) {
+export function Galaxy (props) {
     class yParticle{
         // modèle sur lequel on va pouvoir dupliquer des objets qui auront des propriétés x, y, vx et vy particulières
           constructor (x,y,p5){
@@ -65,6 +65,10 @@ export default function Galaxy_Particle (props) {
     }
 
     return (
-        <Sketch setup={setup} draw={draw} />
+        <div className="w-full h-full p-5 bg-[#1D1F20] min-h-full">
+            <h2 className="text-[#ff4d6d] font-italiana text-8xl uppercase font-bold mb-4">Galaxy</h2>
+            <Sketch setup={setup} draw={draw} />
+        </div>
     )
 }
+export default Galaxy;

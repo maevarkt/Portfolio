@@ -1,12 +1,7 @@
 import React from "react";
 import 'animate.css';
-import Hover from "../components/Hover";
-import Spirograph from "../components/Spirograph";
-import Particles from "../components/Particle";
-import Galaxy_Particle from "../components/Galaxy_Particle";
 
 export const Projects = () => {
-    
     return (
         <div className="w-full h-full p-5 bg-[#1D1F20] min-h-screen">
             <h2 className="font-italiana my-5 ml-4 text-8xl uppercase font-bold text-[#ff4d6d]">Projets</h2>
@@ -74,28 +69,24 @@ export const Projects = () => {
                         <p className="my-8">
                             <span className="bg-[#ff4d6d] text-white mr-4 p-2">JavaScript</span>
                             <span className="bg-[#ff4d6d] text-white mr-4 p-2">Art numérique</span>
+                            <span className="bg-[#ff4d6d] text-white mr-4 p-2">p5.js</span>
                         </p>
                         <div className="py-5 border-b border-gray-200 dark:border-gray-700 flex flex-row overflow-x-scroll space-x-5 ">
-                            <div>
-                                <Spirograph/>
+                            <div className="relative">
+                                <img src="./img/spirograph.png" className="max-w-none"/>
+                                <a href="./spirograph" className="text-[#ff4d6d] font-bold hover:bg-[#ff4d6d] hover:text-black duration-500 flex items-center justify-center absolute inset-0">Voir le projet</a>
                             </div>
-                            <div>
-                                <Galaxy_Particle/>
-                                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                                    Particules
-                                </p>
+                            <div className="relative">
+                                <img src="./img/galaxy.png" className="max-w-none"/>
+                                <a href="./galaxy" className="text-[#ff4d6d] font-bold hover:bg-[#ff4d6d] hover:text-black duration-500 flex items-center justify-center absolute inset-0">Voir le projet</a>
                             </div>
-                            <div>
-                                <Particles/>
-                                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                                    Particules aléatoire au chargement
-                                </p>
+                            <div className="relative">
+                                <img src="./img/particules.png" className="max-w-none"/>
+                                <a href="./particle" className="text-[#ff4d6d] font-bold hover:bg-[#ff4d6d] hover:text-black duration-500 flex items-center justify-center absolute inset-0">Voir le projet</a>
                             </div>
-                            <div>
-                                <Hover/>
-                                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                                    Survolez horizontalement
-                                </p>
+                            <div className="relative">
+                                <img src="./img/hover.png" className="max-w-none"/>
+                                <a href="./hover" className="text-[#ff4d6d] font-bold hover:bg-[#ff4d6d] hover:text-black duration-500 flex items-center justify-center absolute inset-0">Voir le projet</a>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import React from "react"; 
 import Sketch from "react-p5";
 
-export default function Hover (props) {
+export function Hover (props) {
     const setup = (p5, canvasParentRef) => {
         p5.createCanvas(500, 500).parent(canvasParentRef);
     }
@@ -33,6 +33,12 @@ export default function Hover (props) {
     }
 
     return (
-        <Sketch setup={setup} draw={draw} />
+        <div className="w-full h-full p-5 bg-[#1D1F20] min-h-full">
+            <h2 className="text-[#ff4d6d] font-italiana text-8xl uppercase font-bold mb-4">Hover</h2>
+            <p className="text-white py-2">Survolez la forme</p>
+            <Sketch setup={setup} draw={draw} />
+        </div>
     )
-}
+    }
+    
+    export default Hover;
