@@ -65,13 +65,15 @@ export const Projects = () => {
                         
                     </div>
                     {/* Creative coding */}
-                    <div className="h-full py-5 mx-4 gap-6 flex flex-wrap min-h-screen  js-show-on-scroll">
-                        <h3 className="text-6xl mb-4 font-italiana uppercase font-bold text-[#e1e1e5]">Creative coding</h3>
-                        <p className="my-5">
-                            <span className="bg-[#ff4d6d] text-white mr-4 p-2">JavaScript</span>
-                            <span className="bg-[#ff4d6d] text-white mr-4 p-2">Art numérique</span>
-                            <span className="bg-[#ff4d6d] text-white mr-4 p-2">p5.js</span>
-                        </p>
+                    <div className="h-full py-5 mx-4 gap-6 flex flex-wrap min-h-screen js-show-on-scroll">
+                        <div className="grid grid-rows-2">
+                            <h3 className="text-6xl mb-4 font-italiana uppercase font-bold text-[#e1e1e5]">Creative coding</h3>
+                            <p className="my-5 col-span-2 ">
+                                <span className="bg-[#ff4d6d] text-white mr-4 p-2">JavaScript</span>
+                                <span className="bg-[#ff4d6d] text-white mr-4 p-2">Art numérique</span>
+                                <span className="bg-[#ff4d6d] text-white mr-4 p-2">p5.js</span>
+                            </p>
+                        </div>
                         <div className="py-2 border-b border-gray-200 dark:border-gray-700 flex flex-row overflow-x-scroll space-x-5 ">
                             <div className="relative">
                                 <img src="./img/spirograph.png" className="max-w-none"/>
