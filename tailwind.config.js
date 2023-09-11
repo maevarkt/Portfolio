@@ -13,6 +13,7 @@ module.exports = {
       animation: {
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
+        fadeIn: "fadeIn 2s ease-in forwards"
       },
       keyframes: {
         marquee: {
@@ -23,10 +24,14 @@ module.exports = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
       },
+      variants: {
+        animation: ["motion-safe"]
+      }
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
 }

@@ -10,7 +10,7 @@ const Home = () => {
                 <a href='/experience' className='col-span-4 border-solid border-2 border-[black] text-[#F5FDF2] bg-[#1D1F20] row-span-3 flex items-center justify-center font-italiana text-xl uppercase hover:bg-[#ff4d6d] duration-500'>
                     CV
                 </a>
-                <a href='/' className='border-solid border-2 border-[black] col-start-3 col-span-2 row-span-2 flex items-center justify-center text-5xl font-eduqld text-[#151515] bg-[#F5FDF2] hover:text-[#ff4d6d]'>
+                <a href='/' className='border-solid border-2 border-[black] col-start-3 col-span-2 row-span-2 flex items-center justify-center text-4xl font-eduqld text-[#151515] bg-[#F5FDF2] hover:text-[#ff4d6d]'>
                     MaeLab
                 </a>
                 <a href='/projects' className='col-span-4 border-solid border-2 border-[black] text-[#F5FDF2] bg-[#1D1F20] row-span-3 flex items-center justify-center font-italiana text-xl uppercase hover:bg-[#ff4d6d] duration-500'>
@@ -25,16 +25,12 @@ const Home = () => {
                         Développeuse en formation 
                         <span className='text-[#ff4d6d] text-xl font-bold bg-[#F5FDF2]'> | </span>
                         A la recherche d'un contrat de professionnalisation de 12 mois (4 jours en entreprise, 1 jour à l'école)
-                        <span className='text-[#ff4d6d] text-xl font-bold bg-[#F5FDF2]'> | </span> 
-                        Début de contrat : Septembre
                         <span className='text-[#ff4d6d] text-xl font-bold bg-[#F5FDF2]'> |  </span>
                     </div>
                     <div className='uppercase font-bold py-4 absolute animate-marquee2 whitespace-nowrap bg-[#F5FDF2]'>
                         Développeuse en formation 
                         <span className='text-[#ff4d6d] text-xl font-bold bg-[#F5FDF2]'> | </span>
                         A la recherche d'un contrat de professionnalisation de 12 mois (4 jours en entreprise, 1 jour à l'école)
-                        <span className='text-[#ff4d6d] text-xl font-bold bg-[#F5FDF2]'> | </span> 
-                        Début de contrat : Septembre
                     </div>
                 </div>
             </nav>
